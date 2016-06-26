@@ -1,0 +1,5 @@
+tornado>=4.3
+redis>=2.10.5
+hiredis>=0.2.0
+paho-mqtt>=1.1
+pyserial>=3.0.1

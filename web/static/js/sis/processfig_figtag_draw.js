@@ -1,0 +1,12 @@
+	vis.selectAll("text")
+		.data(figtaglist)
+		.enter()
+		.append("text")
+		.attr("class", "tagtext")
+		.text(function(d) { return d.value;})
+		.attr("text-anchor", "middle")
+		.attr("x", function(d,i) {return d.x;})
+		.attr("y", function(d,i) { return d.y;})
+		.attr("font-family", "sans-serif")
+		.attr("font-size", "11px")
+		.attr("fill", "blue");

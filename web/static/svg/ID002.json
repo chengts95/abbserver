@@ -1,0 +1,69 @@
+{
+    "path": [],
+    "rect": [
+        {
+            "height": "334.711",
+            "rx": "",
+            "ry": "40.495899",
+            "style": "fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.56429911;stroke-opacity:1",
+            "transform": "",
+            "width": "360.29401",
+            "x": "110.37663",
+            "y": "119.19102"
+        },
+        {
+            "height": "204.55589",
+            "rx": "",
+            "ry": "24.748737",
+            "style": "fill:#000000;fill-opacity:0.05333333;stroke:#000000;stroke-opacity:1",
+            "transform": "",
+            "width": "240.92139",
+            "x": "145.21829",
+            "y": "159.56752"
+        }
+    ],
+    "text": [
+        {
+            "style": "font-size:30.61528015px;font-style:bold;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:SimHei",
+            "text": "\u5f53\u524d\u7528\u6237\uff1a",
+            "transform": "scale(0.99153062,1.0085417)",
+            "x": "63.087013",
+            "y": "56.71979"
+        },
+        {
+            "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:SimHei",
+            "text": "\u6d4b\u91cf\u65f6\u95f4\uff1a",
+            "transform": "",
+            "x": "154.75345",
+            "y": "183.215"
+        },
+        {
+            "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:SimHei",
+            "text": "\u6536\u7f29\u538b",
+            "transform": "",
+            "x": "401.18201",
+            "y": "231.64357"
+        },
+        {
+            "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:SimHei",
+            "text": "\u8212\u5f20\u538b",
+            "transform": "",
+            "x": "401.18201",
+            "y": "291.07214"
+        },
+        {
+            "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:SimHei",
+            "text": "\u8109\u640f",
+            "transform": "",
+            "x": "405.46774",
+            "y": "346.07214"
+        },
+        {
+            "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:SimHei",
+            "text": "\u53c2\u8003\u5efa\u8bae:",
+            "transform": "",
+            "x": "142.75345",
+            "y": "433.64355"
+        }
+    ]
+}
