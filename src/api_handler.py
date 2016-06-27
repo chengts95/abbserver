@@ -50,13 +50,14 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
                 response_to_send["status"]={"error":"502"}
         else:
             
-            self.handle_req_type(req)
-           
-            response_to_send["status"]="OK"
+            if(self.handle_req_type(req)>0):
+                response_to_send["status"]="OK"
+            else:
+                response_to_send["status"]={"error":"400"}
             
     def handle_req_type(self,req):
         
-        app_global.CLIENT_REQ_TYPES[req['type']]()
+        return app_global.CLIENT_REQ_TYPES[req["request"]](req)
         
 class ApiHandler(tornado.web.RequestHandler):
 
