@@ -3,6 +3,8 @@ Created on 2016年6月26日
 
 @author: cheng
 '''
+from datadef import GET_REQ
+from builtins import int
 cl = []
 import tornado.websocket
 import tornado.web
@@ -50,12 +52,20 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
                 response_to_send["status"]={"error":"502"}
         else:
             
-            if(self.handle_req_type(req)>0):
-                response_to_send["status"]="OK"
+            respond=self.handle_req_type(req)
+            if type(respond) is int:
+                if(respond>0):
+                    response_to_send["status"]="OK"
+                    
+                else:
+                    response_to_send["status"]={"error":"400"}
             else:
-                response_to_send["status"]={"error":"400"}
-            
+                
+                response_to_send["status"]="OK"
+                response_to_send["payload"]=respond
+                
     def handle_req_type(self,req):
+        
         
         return app_global.CLIENT_REQ_TYPES[req["request"]](req)
         
