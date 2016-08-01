@@ -21,9 +21,9 @@ RUN cd /srv \
 	&& pip3 install -U pip \
     && pip3 install -r requirements.txt \
 	&& apk del .build-deps
-WORKDIR /srv/web
+WORKDIR /srv/src/
 RUN   ls -a
 EXPOSE 8000
 
-CMD ["python3", "/srv/web/restful.py"]
+CMD ["python3", "/srv/src/restful.py"]
 
