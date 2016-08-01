@@ -1,10 +1,9 @@
-FROM python:3.5.1-alpine
+FROM python:3.5.2-alpine
 
 MAINTAINER Cheng Tianshi <213132955@seu.edu.cn>
 
 USER root
-ADD web /srv/
-ADD srtp /srv/
+ADD /src /srv/
 ADD requirements.txt /srv
 RUN cd /srv \
 	&& apk add --no-cache --virtual .build-deps  \
