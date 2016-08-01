@@ -33,7 +33,7 @@ class userAgent(nx.DiGraph):
 
         return temp
 
-        return
+
     def add_user(self,u,c):
         self.add_node(u,comfort=c)
 
@@ -41,7 +41,7 @@ a=userAgent(U,C)
 
 a.condition_change("u3",27.5)
 a.condition_change("u4",27)
-a.condition_change("u2",27.5)
+a.condition_change("u4",27.5)
 a.condition_change("u2",27)
 a.add_user("u5",26)
 pos=nx.spring_layout(a)
