@@ -13,7 +13,7 @@ host='127.0.0.1'
 port=6379
 
 host=os.getenv("REDIS_IP",host)
-port=eval(os.getenv("REDIS_PORT"),port)
+port=eval(os.getenv("REDIS_PORT",port))
 
 redisClient=redis.StrictRedis(host=host,port=port,db=0,
                               decode_responses=True)
