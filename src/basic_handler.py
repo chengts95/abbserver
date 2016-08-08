@@ -4,14 +4,15 @@
 '''
 import tornado
 
+
 class BaseHandler(tornado.web.RequestHandler):
+
     def get_current_user(self):
         return self.get_secure_cookie("user")
 
 
-
-
 class LoginHandler(BaseHandler):
+
     @tornado.gen.coroutine
     def get(self):
         incorrect = self.get_secure_cookie("incorrect")
@@ -33,10 +34,12 @@ class LoginHandler(BaseHandler):
             incorrect = self.get_secure_cookie("incorrect")
             if not incorrect:
                 incorrect = 0
-            self.set_secure_cookie("incorrect", str(int(incorrect)+1))
+            self.set_secure_cookie("incorrect", str(int(incorrect) + 1))
             self.write('<center>Something Wrong With Your Data <a href="/">Go Home</a></center>')
 
+
 class LogoutHandler(BaseHandler):
+
     def get(self):
         self.clear_cookie("user")
         self.redirect(self.get_argument("next", "/"))
