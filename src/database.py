@@ -156,7 +156,7 @@ port = os.getenv("REDIS_PORT", "6379")
 
 def init_redis():
     global CLIENT_REQ_TYPES, GET_REQ, UPDATE_REQ, SET_REQ
-    r = redis_client()
+    r = redis_client(host,port)
     CLIENT_REQ_TYPES = {GET_REQ: r.get_key,
                         UPDATE_REQ: r.update_key,
                         SET_REQ: r.set_key}
